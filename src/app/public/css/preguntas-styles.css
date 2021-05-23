@@ -1,0 +1,69 @@
+body {
+    background: linear-gradient(90deg, rgba(31, 120, 107, 1) 0%, rgba(61, 239, 214, 1) 100%);
+}
+
+.formulario {
+    width: 100%;
+    margin: 25px 0 25px 0;
+    border-radius: 20px;
+    border: 3px solid rgba(12, 11, 11, 0.425);
+}
+
+.formulario h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3em;
+    text-align: center;
+    display: block;
+    background-color: #8b7a7a;
+    color: #fff;
+}
+
+.formulario form {
+    margin: 20px auto;
+    margin-bottom: 20px;
+    width: 50%;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario form input[type="text"],
+.formulario form input[type="email"],
+.formulario form textarea,
+.formulario form input[type="submit"] {
+    width: 70%;
+    height: 50px;
+    padding: 20px;
+    margin: 10px 0 10px 10px;
+    border-radius: 10px;
+    border: 2px solid var(--turquoise);
+    background: #bebaba;
+}
+
+.formulario form textarea {
+    height: 100px;
+}
+
+.formulario form input[type="submit"] {
+    width: 30%;
+    align-self: auto;
+    padding: 0;
+    cursor: pointer;
+    background: linear-gradient(90deg, rgba(31, 120, 107, 1) 0%, rgba(61, 239, 214, 1) 100%);
+    color: #fff;
+    transition: all 300ms;
+}
+
+.formulario form input[type="submit"]:hover {
+    transform: scale(1, 1.2);
+}
+
+.formulario form input[type="text"]:focus,
+.formulario form input[type="email"]:focus,
+.formulario form textarea:focus {
+    background-color: #fff;
+    color: #000;
+}

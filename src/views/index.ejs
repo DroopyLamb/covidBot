@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ccd415dd1f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&family=Zen+Dots&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ccd415dd1f.js" crossorigin="anonymous"></script>
+    <title>covidBot</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header-menu">
+                <div class="logo">
+                    <i class="fas fa-shield-virus"></i>
+                    <span>covidBot</span>
+                </div>
+                <nav>
+                    <a href="#bot">CovidBot</a>
+                    <a href="#">Preguntas Frecuentes</a>
+                    <a href="#">Integrantes</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="content-presentation">
+        <div class="container">
+            <div class="banner">
+                <div class="text">
+                    <h2 class="covid-title">covid<span class="blue">Bot</span></h2>
+                    <p>¿Tienes <span class="turquoise">dudas</span> sobre el virus <span class="turquoise">Covid-19</span> ?</p>
+                </div>
+
+                <div class="doctor-use">
+                    <!-- Icon taken from font awesome -->
+                    <img src="./img/doctor.png" alt="doctor-icono">
+                    <button>Cuéntanos</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="covidBot-description">
+        <div class="container">
+            <h1 class="covid-title">covid<span class="blue">Bot</span></h1>
+
+            <div class="image-description">
+                <img src="./img/bot-face.png" alt="covidBot" width="300" height="300">
+                <div class="description">
+                    <p>covidBot simula una conversación natural con los usuarios informando y resolviendo dudas sobre la covid-19, al decir natural significa que no importa la forma en que este estructurada una pregunta, covidBot podrá dar una respuesta</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bot">
+        <a href="#bot"></a>
+        <div class="container">
+
+            <div class="form">
+                <div class="titulo">
+                    <h2 class="covid-title">covid<span class="blue">Bot</span></h2>
+                    <i class="fas fa-robot"></i>
+                </div>
+
+                <div class="chat">
+                    <div id="respuestas">
+                        <!-- Se inyectarán las preguntas del usuario y las respuestas de covidBot -->
+
+                    </div>
+                </div>
+
+                <div class="write-message">
+                    <textarea id="pregunta" name="message" id="message" placeholder="Ingresa tu mensaje"></textarea>
+                    <button id="enviar" class="enviar"><i class="fas fa-paper-plane"></i></button>
+                    <button id="voice" class="enviar"><i class="fas fa-microphone"></i></button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="elements">
+                <div class="logo">
+                    <i class="fas fa-shield-virus"></i>
+                    <span>covidBot</span>
+                </div>
+
+                <div class="author">
+                    <p>&copy; Araujo Isabel - Castillo Saúl</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./js/capturar-mensaje.js"></script>
+    <script src="./js/evaluar-mensaje.js"></script>
+    <script src="./js/responder.js"></script>
+    <script src="./js/imprimir-respuesta.js"></script>
+    <script src="./js/voice-recognition.js"></script>
+</body>
+
+</html>

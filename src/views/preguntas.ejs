@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ccd415dd1f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/preguntas-styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&family=Zen+Dots&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ccd415dd1f.js" crossorigin="anonymous"></script>
+    <title>covidBot</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header-menu">
+                <div class="logo">
+                    <i class="fas fa-shield-virus"></i>
+                    <span>covidBot</span>
+                </div>
+                <nav>
+                    <a href="#">CovidBot</a>
+                    <a href="#">Preguntas Frecuentes</a>
+                    <a href="#">Integrantes</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container">
+        <div class="formulario">
+            <h1>¿Cuáles son tus dudas sobre la Covid-19?</h1>
+            <form action="/preguntas" method="POST">
+                <input type="text" name="nombre" placeholder="Nombre(s)" minlength="4" required>
+                <input type="text" name="aPaterno" placeholder="Apellido Paterno" required>
+                <input type="text" name="aMaterno" placeholder="Apellido Materno" required>
+                <input type="email" name="mail" placeholder="Email" required>
+                <textarea name="pregunta" placeholder="Escribe tu pregunta" required></textarea>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
