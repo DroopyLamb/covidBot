@@ -135,8 +135,6 @@ function evaluarUsuario(mensajeUsuario) {
     }
 
 }
-
-
 // Evalúa las expresiones regulares dentro del mensaje general
 function testearResponse(palabra1, palabra2, mensajeUsuario) {
     if (palabra1.test(mensajeUsuario) && palabra2.test(mensajeUsuario)) {

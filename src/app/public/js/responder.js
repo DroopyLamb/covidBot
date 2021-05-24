@@ -52,11 +52,11 @@ function responder(cod, mensajeUsuario) {
             break;
 
         case 8: // Medidas de protección
-            response = `LAvarse las manos frecuentemente, en especial después de contacto directo con las personas u objetos de su entorno.`;
+            response = `Lavarse las manos frecuentemente, en especial después de contacto directo con las personas u objetos de su entorno.`;
             cod = 1;
             mostrarRespuesta(response, cod);
 
-            response = `Lavarse las manos con agua jabón o usando un desinfectante a base de alcohol.`;
+            response = `Usar un desinfectante a base de alcohol.`;
             mostrarRespuesta(response, cod);
 
             response = `Al toser o estornudar, cubrirse la boca y la nariz con el codo flexionado o con un pañuelo desechable.`;

@@ -20,7 +20,7 @@ module.exports = app => {
     app.post('/preguntas', async(req, res) => {
         const { nombre, aPaterno, aMaterno, mail, pregunta } = req.body;
         const id = nanoid(10)
-        console.log(id);
+
 
         await connection.query('INSERT INTO usuario SET?', {
             id,
